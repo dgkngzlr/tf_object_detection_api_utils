@@ -1,0 +1,15 @@
+# Dosya yapısı bu klasördeki gibi olmalı.
+
+1-)models\research\object_detection\data klasöründen xml_to_csv.py calıstır.(Parametre almıyor.)
+
+2-)models\research\object_detection klasöründen aşağıdaki kodları sırasıyla çalıştır :
+
+---!python generate_tfrecord.py --csv_input=data/test_labels.csv --output_path=data/test.record --image_dir=data/images/test/
+
+
+---!python generate_tfrecord.py --csv_input=data/train_labels.csv --output_path=data/train.record --image_dir=data/images/train/
+
+####################################################
+generate_tfrecord.py  object_detection/ foldera at.#
+xml_to_csv.py object_detection/data içine at.      #
+####################################################
